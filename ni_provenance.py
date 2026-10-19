@@ -10,7 +10,7 @@ def norm(s): return ' '.join(s.split())
 
 def build():
     cnt = collections.Counter()
-    for f in glob.glob('/tmp/ni_task*.json'):
+    for f in sorted(glob.glob('data/ni_tasks/task*.json')):
         for x in json.load(open(f)).get('Instances', []):
             s = norm(x['input'])
             s = re.sub(r'^(Passage|Context|Sentence)\s*:\s*', '', s)

@@ -3,7 +3,8 @@
 
 dose_dolma / dose_pile come from the infini-gram cache (Task 1 + dose_complete.py).
 dose_natinst and is_natinst_exemplar are derived offline from the five NatInst
-task files. is_natinst_exemplar is the mechanism variable: a sentence placed in a
+task files in data/ni_tasks/ (tasks 277, 279, 280, 316, 317).
+is_natinst_exemplar is the mechanism variable: a sentence placed in a
 task's Positive/Negative Examples block is re-rendered in every few-shot prompt
 built from that task, while an ordinary Instance appears once."""
 import json, glob, re, csv, collections, probe
@@ -14,13 +15,17 @@ strip_prefix = lambda s: re.sub(r"^(Passage|Context|Sentence)\s*:\s*", "", norm(
 def natinst_index():
     """-> (copies: Counter, exemplar: set) over normalised sentence strings."""
     copies, exemplar = collections.Counter(), set()
-    for f in glob.glob("/tmp/ni_task*.json"):
+    for f in sorted(glob.glob("data/ni_tasks/task*.json")):
         d = json.load(open(f))
         for x in d.get("Instances", []):
             s = strip_prefix(x["input"])
             copies[s] += 1
-            for p in re.split(r"(?<=[.!?])\s+", s):
-                if len(p.split()) >= 3: copies[norm(p)] += 1
+            # index the pieces of multi-sentence passages only: a single-sentence
+            # passage splits into itself, and counting it again doubles its dose
+            parts = re.split(r"(?<=[.!?])\s+", s)
+            if len(parts) > 1:
+                for p in parts:
+                    if len(p.split()) >= 3: copies[norm(p)] += 1
         for key in ("Positive Examples", "Negative Examples"):
             for e in d.get(key, []):
                 s = strip_prefix(e.get("input", ""))
