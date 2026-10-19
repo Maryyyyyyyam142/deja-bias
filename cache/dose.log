@@ -1,0 +1,358 @@
+[cache] 4495 responses loaded
+[dose] 9334 sentences, 18628 unique queries, 15034 uncached
+[limit] HTTP 403; rate -> 1.49 q/s
+[limit] HTTP 403; rate -> 1.19 q/s
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[200/15034] 0.84 q/s eta 294m
+[limit] HTTP 403; rate -> 1.08 q/s
+[limit] HTTP 403; rate -> 0.87 q/s
+[limit] HTTP 403; rate -> 1.03 q/s
+[limit] HTTP 403; rate -> 0.83 q/s
+[400/15034] 0.81 q/s eta 302m
+[limit] HTTP 403; rate -> 1.02 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[600/15034] 0.78 q/s eta 307m
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.91 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[800/15034] 0.77 q/s eta 310m
+[limit] HTTP 403; rate -> 1.00 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.04 q/s
+[limit] HTTP 403; rate -> 0.83 q/s
+[1000/15034] 0.76 q/s eta 309m
+[limit] HTTP 403; rate -> 1.22 q/s
+[limit] HTTP 403; rate -> 0.98 q/s
+[1200/15034] 0.77 q/s eta 298m
+[limit] HTTP 403; rate -> 1.13 q/s
+[limit] HTTP 403; rate -> 0.90 q/s
+[limit] HTTP 403; rate -> 0.98 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[1400/15034] 0.77 q/s eta 295m
+[limit] HTTP 403; rate -> 1.13 q/s
+[limit] HTTP 403; rate -> 0.90 q/s
+[limit] HTTP 403; rate -> 1.00 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[1600/15034] 0.77 q/s eta 292m
+[limit] HTTP 403; rate -> 1.02 q/s
+[limit] HTTP 403; rate -> 0.82 q/s
+[limit] HTTP 403; rate -> 0.94 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[1800/15034] 0.76 q/s eta 288m
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[2000/15034] 0.77 q/s eta 284m
+[limit] HTTP 403; rate -> 1.05 q/s
+[limit] HTTP 403; rate -> 0.84 q/s
+[2200/15034] 0.77 q/s eta 277m
+[limit] HTTP 403; rate -> 1.05 q/s
+[limit] HTTP 403; rate -> 0.84 q/s
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[2400/15034] 0.77 q/s eta 273m
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.98 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[2600/15034] 0.77 q/s eta 269m
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[2800/15034] 0.77 q/s eta 265m
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.00 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[3000/15034] 0.77 q/s eta 261m
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[3200/15034] 0.77 q/s eta 255m
+[limit] HTTP 403; rate -> 1.04 q/s
+[limit] HTTP 403; rate -> 0.83 q/s
+[limit] HTTP 403; rate -> 0.94 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[3400/15034] 0.77 q/s eta 253m
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[3600/15034] 0.77 q/s eta 247m
+[limit] HTTP 403; rate -> 1.06 q/s
+[limit] HTTP 403; rate -> 0.85 q/s
+[limit] HTTP 403; rate -> 0.96 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[3800/15034] 0.77 q/s eta 243m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 1.08 q/s
+[limit] HTTP 403; rate -> 0.86 q/s
+[4000/15034] 0.77 q/s eta 238m
+[limit] HTTP 403; rate -> 1.11 q/s
+[limit] HTTP 403; rate -> 0.89 q/s
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[4200/15034] 0.77 q/s eta 233m
+[limit] HTTP 403; rate -> 1.02 q/s
+[limit] HTTP 403; rate -> 0.82 q/s
+[limit] HTTP 403; rate -> 1.03 q/s
+[limit] HTTP 403; rate -> 0.82 q/s
+[4400/15034] 0.77 q/s eta 229m
+[limit] HTTP 403; rate -> 1.02 q/s
+[limit] HTTP 403; rate -> 0.82 q/s
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[4600/15034] 0.77 q/s eta 224m
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[4800/15034] 0.77 q/s eta 220m
+[limit] HTTP 403; rate -> 0.92 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[5000/15034] 0.78 q/s eta 215m
+[limit] HTTP 403; rate -> 1.06 q/s
+[limit] HTTP 403; rate -> 0.85 q/s
+[limit] HTTP 403; rate -> 1.00 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[5200/15034] 0.78 q/s eta 211m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[5400/15034] 0.77 q/s eta 207m
+[limit] HTTP 403; rate -> 1.00 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.93 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[5600/15034] 0.77 q/s eta 203m
+[limit] HTTP 403; rate -> 1.05 q/s
+[limit] HTTP 403; rate -> 0.84 q/s
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[5800/15034] 0.77 q/s eta 199m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[6000/15034] 0.77 q/s eta 195m
+[limit] HTTP 403; rate -> 0.94 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[6200/15034] 0.77 q/s eta 191m
+[limit] HTTP 403; rate -> 0.98 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.00 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[6400/15034] 0.77 q/s eta 187m
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[6600/15034] 0.77 q/s eta 182m
+[limit] HTTP 403; rate -> 1.03 q/s
+[limit] HTTP 403; rate -> 0.83 q/s
+[limit] HTTP 403; rate -> 1.00 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[6800/15034] 0.77 q/s eta 177m
+[limit] HTTP 403; rate -> 0.98 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[7000/15034] 0.77 q/s eta 173m
+[limit] HTTP 403; rate -> 1.03 q/s
+[limit] HTTP 403; rate -> 0.83 q/s
+[limit] HTTP 403; rate -> 1.03 q/s
+[limit] HTTP 403; rate -> 0.82 q/s
+[7200/15034] 0.77 q/s eta 169m
+[limit] HTTP 403; rate -> 1.02 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[7400/15034] 0.77 q/s eta 165m
+[limit] HTTP 403; rate -> 1.03 q/s
+[limit] HTTP 403; rate -> 0.82 q/s
+[7600/15034] 0.77 q/s eta 160m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.03 q/s
+[limit] HTTP 403; rate -> 0.83 q/s
+[7800/15034] 0.77 q/s eta 156m
+[limit] HTTP 403; rate -> 1.00 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.05 q/s
+[limit] HTTP 403; rate -> 0.84 q/s
+[8000/15034] 0.78 q/s eta 151m
+[limit] HTTP 403; rate -> 1.02 q/s
+[limit] HTTP 403; rate -> 0.82 q/s
+[limit] HTTP 403; rate -> 0.90 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[8200/15034] 0.77 q/s eta 147m
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[8400/15034] 0.77 q/s eta 143m
+[limit] HTTP 403; rate -> 1.00 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[8600/15034] 0.77 q/s eta 139m
+[limit] HTTP 403; rate -> 1.02 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[8800/15034] 0.77 q/s eta 134m
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.98 q/s
+[9000/15034] 0.77 q/s eta 130m
+[limit] HTTP 403; rate -> 1.05 q/s
+[limit] HTTP 403; rate -> 0.84 q/s
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[9200/15034] 0.77 q/s eta 126m
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[9400/15034] 0.77 q/s eta 121m
+[limit] HTTP 403; rate -> 1.02 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[9600/15034] 0.77 q/s eta 117m
+[limit] HTTP 403; rate -> 1.05 q/s
+[limit] HTTP 403; rate -> 0.84 q/s
+[9800/15034] 0.77 q/s eta 113m
+[limit] HTTP 403; rate -> 1.04 q/s
+[limit] HTTP 403; rate -> 0.83 q/s
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[10000/15034] 0.77 q/s eta 108m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[10200/15034] 0.77 q/s eta 104m
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.96 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[10400/15034] 0.77 q/s eta 100m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.02 q/s
+[limit] HTTP 403; rate -> 0.82 q/s
+[10600/15034] 0.77 q/s eta 95m
+[limit] HTTP 403; rate -> 1.06 q/s
+[limit] HTTP 403; rate -> 0.84 q/s
+[limit] HTTP 403; rate -> 0.96 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[10800/15034] 0.77 q/s eta 91m
+[limit] HTTP 403; rate -> 0.96 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[11000/15034] 0.78 q/s eta 87m
+[limit] HTTP 403; rate -> 1.09 q/s
+[limit] HTTP 403; rate -> 0.87 q/s
+[limit] HTTP 403; rate -> 1.02 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[11200/15034] 0.78 q/s eta 82m
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.03 q/s
+[limit] HTTP 403; rate -> 0.82 q/s
+[11400/15034] 0.78 q/s eta 78m
+[limit] HTTP 403; rate -> 0.96 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.04 q/s
+[limit] HTTP 403; rate -> 0.83 q/s
+[11600/15034] 0.78 q/s eta 74m
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.93 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[11800/15034] 0.77 q/s eta 70m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[12000/15034] 0.77 q/s eta 65m
+[limit] HTTP 403; rate -> 0.91 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.02 q/s
+[limit] HTTP 403; rate -> 0.82 q/s
+[12200/15034] 0.77 q/s eta 61m
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.98 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[12400/15034] 0.77 q/s eta 57m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[12600/15034] 0.77 q/s eta 52m
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[limit] HTTP 403; rate -> 0.92 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[12800/15034] 0.77 q/s eta 48m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.92 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[13000/15034] 0.77 q/s eta 44m
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.98 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[13200/15034] 0.77 q/s eta 40m
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[13400/15034] 0.77 q/s eta 35m
+[limit] HTTP 403; rate -> 0.96 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[13600/15034] 0.77 q/s eta 31m
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[limit] HTTP 403; rate -> 1.00 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[13800/15034] 0.77 q/s eta 27m
+[limit] HTTP 403; rate -> 0.96 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.07 q/s
+[limit] HTTP 403; rate -> 0.86 q/s
+[14000/15034] 0.77 q/s eta 22m
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.96 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[14200/15034] 0.77 q/s eta 18m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[14400/15034] 0.77 q/s eta 14m
+[limit] HTTP 403; rate -> 1.04 q/s
+[limit] HTTP 403; rate -> 0.83 q/s
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[14600/15034] 0.77 q/s eta 9m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.96 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[14800/15034] 0.77 q/s eta 5m
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[limit] HTTP 403; rate -> 0.93 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[15000/15034] 0.77 q/s eta 1m
+[dose done] 15034 queries in 324.2 min

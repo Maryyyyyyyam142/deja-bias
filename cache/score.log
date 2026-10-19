@@ -1,0 +1,61 @@
+9334 sentences to score
+[pythia-6.9b] loading EleutherAI/pythia-6.9b
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  12%|█▏        | 48/388 [00:00<00:00, 455.19it/s]Loading weights:  25%|██▍       | 96/388 [00:00<00:00, 462.25it/s]Loading weights:  37%|███▋      | 144/388 [00:00<00:00, 448.07it/s]Loading weights:  50%|████▉     | 193/388 [00:00<00:00, 456.92it/s]Loading weights:  62%|██████▏   | 242/388 [00:00<00:00, 460.12it/s]Loading weights:  75%|███████▍  | 290/388 [00:00<00:00, 458.16it/s]Loading weights:  87%|████████▋ | 336/388 [00:00<00:00, 458.72it/s]Loading weights:  99%|█████████▉| 384/388 [00:00<00:00, 459.40it/s]Loading weights: 100%|██████████| 388/388 [00:00<00:00, 458.25it/s]
+  [pythia-6.9b] 16/9334  17 sent/s
+  [pythia-6.9b] 656/9334  123 sent/s
+  [pythia-6.9b] 1296/9334  148 sent/s
+  [pythia-6.9b] 1936/9334  158 sent/s
+  [pythia-6.9b] 2576/9334  165 sent/s
+  [pythia-6.9b] 3216/9334  174 sent/s
+  [pythia-6.9b] 3856/9334  183 sent/s
+  [pythia-6.9b] 4496/9334  191 sent/s
+  [pythia-6.9b] 5136/9334  199 sent/s
+  [pythia-6.9b] 5776/9334  206 sent/s
+  [pythia-6.9b] 6416/9334  212 sent/s
+  [pythia-6.9b] 7056/9334  218 sent/s
+  [pythia-6.9b] 7696/9334  223 sent/s
+  [pythia-6.9b] 8336/9334  228 sent/s
+  [pythia-6.9b] 8976/9334  233 sent/s
+[pythia-6.9b] done in 0.7 min
+[pythia-6.9b] wrote 9334 rows
+[olmo-7b-v1.5] loading allenai/OLMo-7B-hf
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files:  17%|█▋        | 1/6 [06:33<32:46, 393.30s/it]Fetching 6 files:  33%|███▎      | 2/6 [07:36<13:17, 199.33s/it]Fetching 6 files:  50%|█████     | 3/6 [07:41<05:31, 110.62s/it]Fetching 6 files:  67%|██████▋   | 4/6 [07:43<02:15, 67.68s/it] Fetching 6 files:  83%|████████▎ | 5/6 [07:44<00:43, 43.42s/it]Fetching 6 files: 100%|██████████| 6/6 [07:44<00:00, 28.71s/it]Fetching 6 files: 100%|██████████| 6/6 [07:44<00:00, 77.39s/it]
+Loading weights:   0%|          | 0/226 [00:00<?, ?it/s]Loading weights:   0%|          | 1/226 [00:00<00:23,  9.59it/s]Loading weights:   4%|▎         | 8/226 [00:00<00:05, 43.02it/s]Loading weights:   8%|▊         | 18/226 [00:00<00:03, 65.76it/s]Loading weights:  14%|█▎        | 31/226 [00:00<00:02, 90.00it/s]Loading weights:  19%|█▊        | 42/226 [00:00<00:01, 96.64it/s]Loading weights:  23%|██▎       | 53/226 [00:00<00:01, 95.43it/s]Loading weights:  29%|██▉       | 66/226 [00:00<00:01, 104.58it/s]Loading weights:  34%|███▍      | 77/226 [00:00<00:01, 105.85it/s]Loading weights:  39%|███▉      | 88/226 [00:00<00:01, 103.44it/s]Loading weights:  45%|████▍     | 101/226 [00:01<00:01, 106.63it/s]Loading weights:  50%|████▉     | 112/226 [00:01<00:01, 105.33it/s]Loading weights:  54%|█████▍    | 123/226 [00:01<00:01, 101.53it/s]Loading weights:  60%|█████▉    | 135/226 [00:01<00:00, 106.10it/s]Loading weights:  65%|██████▍   | 146/226 [00:01<00:00, 103.09it/s]Loading weights:  70%|██████▉   | 158/226 [00:01<00:00, 105.51it/s]Loading weights:  75%|███████▍  | 169/226 [00:01<00:00, 102.55it/s]Loading weights:  80%|███████▉  | 180/226 [00:01<00:00, 99.15it/s] Loading weights:  85%|████████▍ | 192/226 [00:01<00:00, 101.26it/s]Loading weights:  90%|████████▉ | 203/226 [00:02<00:00, 102.10it/s]Loading weights:  95%|█████████▍| 214/226 [00:02<00:00, 96.06it/s] Loading weights: 100%|██████████| 226/226 [00:02<00:00, 98.47it/s]
+  [olmo-7b-v1.5] 16/9334  53 sent/s
+  [olmo-7b-v1.5] 656/9334  127 sent/s
+  [olmo-7b-v1.5] 1296/9334  143 sent/s
+  [olmo-7b-v1.5] 1936/9334  151 sent/s
+  [olmo-7b-v1.5] 2576/9334  155 sent/s
+  [olmo-7b-v1.5] 3216/9334  160 sent/s
+  [olmo-7b-v1.5] 3856/9334  166 sent/s
+  [olmo-7b-v1.5] 4496/9334  173 sent/s
+  [olmo-7b-v1.5] 5136/9334  179 sent/s
+  [olmo-7b-v1.5] 5776/9334  185 sent/s
+  [olmo-7b-v1.5] 6416/9334  190 sent/s
+  [olmo-7b-v1.5] 7056/9334  195 sent/s
+  [olmo-7b-v1.5] 7696/9334  200 sent/s
+  [olmo-7b-v1.5] 8336/9334  204 sent/s
+  [olmo-7b-v1.5] 8976/9334  208 sent/s
+[olmo-7b-v1.5] done in 0.7 min
+[olmo-7b-v1.5] wrote 9334 rows
+[olmo-7b-v1.7] loading allenai/OLMo-1.7-7B-hf
+Fetching 6 files:   0%|          | 0/6 [00:00<?, ?it/s]Fetching 6 files:  17%|█▋        | 1/6 [06:30<32:32, 390.42s/it]Fetching 6 files:  33%|███▎      | 2/6 [07:03<12:01, 180.35s/it]Fetching 6 files:  50%|█████     | 3/6 [07:19<05:14, 105.00s/it]Fetching 6 files:  67%|██████▋   | 4/6 [07:41<02:24, 72.27s/it] Fetching 6 files:  83%|████████▎ | 5/6 [07:51<00:50, 50.09s/it]Fetching 6 files: 100%|██████████| 6/6 [07:55<00:00, 34.26s/it]Fetching 6 files: 100%|██████████| 6/6 [07:55<00:00, 79.24s/it]
+Loading weights:   0%|          | 0/226 [00:00<?, ?it/s]Loading weights:   0%|          | 1/226 [00:00<00:31,  7.10it/s]Loading weights:   4%|▍         | 10/226 [00:00<00:04, 44.68it/s]Loading weights:  11%|█         | 24/226 [00:00<00:02, 79.75it/s]Loading weights:  17%|█▋        | 38/226 [00:00<00:02, 85.59it/s]Loading weights:  23%|██▎       | 52/226 [00:00<00:01, 101.25it/s]Loading weights:  28%|██▊       | 64/226 [00:00<00:01, 104.16it/s]Loading weights:  33%|███▎      | 75/226 [00:00<00:01, 103.23it/s]Loading weights:  38%|███▊      | 87/226 [00:00<00:01, 98.72it/s] Loading weights:  45%|████▌     | 102/226 [00:01<00:01, 111.84it/s]Loading weights:  51%|█████     | 115/226 [00:01<00:01, 110.08it/s]Loading weights:  57%|█████▋    | 129/226 [00:01<00:00, 107.11it/s]Loading weights:  64%|██████▎   | 144/226 [00:01<00:00, 114.71it/s]Loading weights:  69%|██████▉   | 157/226 [00:01<00:00, 112.95it/s]Loading weights:  76%|███████▌  | 171/226 [00:01<00:00, 113.19it/s]Loading weights:  81%|████████▏ | 184/226 [00:01<00:00, 117.40it/s]Loading weights:  87%|████████▋ | 196/226 [00:01<00:00, 112.84it/s]Loading weights:  92%|█████████▏| 208/226 [00:02<00:00, 110.69it/s]Loading weights:  97%|█████████▋| 220/226 [00:02<00:00, 109.55it/s]Loading weights: 100%|██████████| 226/226 [00:02<00:00, 104.79it/s]
+  [olmo-7b-v1.7] 16/9334  62 sent/s
+  [olmo-7b-v1.7] 656/9334  134 sent/s
+  [olmo-7b-v1.7] 1296/9334  147 sent/s
+  [olmo-7b-v1.7] 1936/9334  154 sent/s
+  [olmo-7b-v1.7] 2576/9334  161 sent/s
+  [olmo-7b-v1.7] 3216/9334  169 sent/s
+  [olmo-7b-v1.7] 3856/9334  176 sent/s
+  [olmo-7b-v1.7] 4496/9334  183 sent/s
+  [olmo-7b-v1.7] 5136/9334  189 sent/s
+  [olmo-7b-v1.7] 5776/9334  195 sent/s
+  [olmo-7b-v1.7] 6416/9334  200 sent/s
+  [olmo-7b-v1.7] 7056/9334  205 sent/s
+  [olmo-7b-v1.7] 7696/9334  209 sent/s
+  [olmo-7b-v1.7] 8336/9334  213 sent/s
+  [olmo-7b-v1.7] 8976/9334  218 sent/s
+[olmo-7b-v1.7] done in 0.7 min
+[olmo-7b-v1.7] wrote 9334 rows

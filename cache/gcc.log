@@ -1,0 +1,874 @@
+2 channel Terms of Service accepted
+Retrieving notices: - \ | / done
+Channels:
+ - conda-forge
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
+Solving environment: | / - done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 26.5.3
+    latest version: 26.7.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/fatima/miniconda3
+
+  added / updated specs:
+    - gcc
+    - gxx
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    binutils_impl_linux-64-2.44|       h78f17ca_3         3.6 MB
+    certifi-2026.7.22          |     pyhd8ed1ab_0         134 KB  conda-forge
+    conda-26.7.0               |  py314h9e666f3_0         1.4 MB  conda-forge
+    conda-gcc-specs-15.2.0     |      h53410ce_20          32 KB  conda-forge
+    gcc-15.2.0                 |       hc115cf6_7          30 KB  conda-forge
+    gcc_impl_linux-64-15.2.0   |       hcacfade_7        74.2 MB  conda-forge
+    gxx-15.2.0                 |       h834e499_7          30 KB  conda-forge
+    gxx_impl_linux-64-15.2.0   |       h54ccb8d_7        15.5 MB  conda-forge
+    kernel-headers_linux-64-6.12.0|       he073ed8_6         1.5 MB  conda-forge
+    libgcc-devel_linux-64-15.2.0|     h73f6952_107         2.6 MB  conda-forge
+    libgomp-15.2.0             |       h4751f2c_8         437 KB
+    libsanitizer-15.2.0        |       hb13aed2_7         4.9 MB  conda-forge
+    libstdcxx-devel_linux-64-15.2.0|     h73f6952_107        13.0 MB  conda-forge
+    openssl-3.6.3              |       h35e630c_1         3.0 MB  conda-forge
+    sysroot_linux-64-2.39      |       hc4b9eeb_6        40.1 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:       160.5 MB
+
+The following NEW packages will be INSTALLED:
+
+  binutils_impl_lin~ pkgs/main/linux-64::binutils_impl_linux-64-2.44-h78f17ca_3 
+  conda-gcc-specs    conda-forge/linux-64::conda-gcc-specs-15.2.0-h53410ce_20 
+  gcc                conda-forge/linux-64::gcc-15.2.0-hc115cf6_7 
+  gcc_impl_linux-64  conda-forge/linux-64::gcc_impl_linux-64-15.2.0-hcacfade_7 
+  gxx                conda-forge/linux-64::gxx-15.2.0-h834e499_7 
+  gxx_impl_linux-64  conda-forge/linux-64::gxx_impl_linux-64-15.2.0-h54ccb8d_7 
+  kernel-headers_li~ conda-forge/noarch::kernel-headers_linux-64-6.12.0-he073ed8_6 
+  libgcc-devel_linu~ conda-forge/noarch::libgcc-devel_linux-64-15.2.0-h73f6952_107 
+  libgomp            pkgs/main/linux-64::libgomp-15.2.0-h4751f2c_8 
+  libsanitizer       conda-forge/linux-64::libsanitizer-15.2.0-hb13aed2_7 
+  libstdcxx-devel_l~ conda-forge/noarch::libstdcxx-devel_linux-64-15.2.0-h73f6952_107 
+  sysroot_linux-64   conda-forge/noarch::sysroot_linux-64-2.39-hc4b9eeb_6 
+
+The following packages will be UPDATED:
+
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2~ --> conda-forge/noarch::ca-certificates-2026.7.22-hbd8a1cb_0 
+  certifi            pkgs/main/linux-64::certifi-2026.6.17~ --> conda-forge/noarch::certifi-2026.7.22-pyhd8ed1ab_0 
+  conda              pkgs/main::conda-26.5.3-py314h06a4308~ --> conda-forge::conda-26.7.0-py314h9e666f3_0 
+  openssl               pkgs/main::openssl-3.5.7-h1b28b03_0 --> conda-forge::openssl-3.6.3-h35e630c_1 
+
+
+
+Downloading and Extracting Packages: ...working...gcc_impl_linux-64-15 | 74.2 MB   |            |   0% 
+sysroot_linux-64-2.3 | 40.1 MB   |            |   0% [A
+
+gxx_impl_linux-64-15 | 15.5 MB   |            |   0% [A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   |            |   0% [A[A[A
+
+
+
+libsanitizer-15.2.0  | 4.9 MB    |            |   0% [A[A[A[A
+
+
+
+
+binutils_impl_linux- | 3.6 MB    |            |   0% [A[A[A[A[A
+
+
+
+
+
+openssl-3.6.3        | 3.0 MB    |            |   0% [A[A[A[A[A[A
+
+
+
+
+
+
+libgcc-devel_linux-6 | 2.6 MB    |            |   0% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+kernel-headers_linux | 1.5 MB    |            |   0% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+conda-26.7.0         | 1.4 MB    |            |   0% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libgomp-15.2.0       | 437 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+certifi-2026.7.22    | 134 KB    |            |   0% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+conda-gcc-specs-15.2 | 32 KB     |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+gcc-15.2.0           | 30 KB     |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+gxx-15.2.0           | 30 KB     |            |   0% [A[A[A[A[A[A[A[A[A[A[A[A[A[Agcc_impl_linux-64-15 | 74.2 MB   |            |   0% 
+sysroot_linux-64-2.3 | 40.1 MB   |            |   0% [A
+
+
+libstdcxx-devel_linu | 13.0 MB   |            |   0% [A[A[A
+
+
+
+libsanitizer-15.2.0  | 4.9 MB    |            |   0% [A[A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   |            |   0% [A[A
+sysroot_linux-64-2.3 | 40.1 MB   | 2          |   2% [Agcc_impl_linux-64-15 | 74.2 MB   | 1          |   2% 
+
+
+
+libsanitizer-15.2.0  | 4.9 MB    | #7         |  18% [A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | 3          |   4% [A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   |            |   1% [A[A
+sysroot_linux-64-2.3 | 40.1 MB   | 6          |   6% [Agcc_impl_linux-64-15 | 74.2 MB   | 4          |   4% 
+
+
+
+libsanitizer-15.2.0  | 4.9 MB    | ####8      |  48% [A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | 9          |   9% [A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   | 1          |   1% [A[A
+sysroot_linux-64-2.3 | 40.1 MB   | #          |  10% [Agcc_impl_linux-64-15 | 74.2 MB   | 6          |   7% 
+
+
+
+libsanitizer-15.2.0  | 4.9 MB    | #######6   |  77% [A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | #4         |  15% [A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   | 1          |   2% [A[A
+sysroot_linux-64-2.3 | 40.1 MB   | #4         |  14% [Agcc_impl_linux-64-15 | 74.2 MB   | 9          |  10% 
+
+
+
+libsanitizer-15.2.0  | 4.9 MB    | ########## | 100% [A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | #9         |  20% [A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   | 2          |   3% [A[A
+
+
+
+libsanitizer-15.2.0  | 4.9 MB    | ########## | 100% [A[A[A[A
+
+
+
+libsanitizer-15.2.0  | 4.9 MB    | ########## | 100% [A[A[A[A
+sysroot_linux-64-2.3 | 40.1 MB   | #9         |  19% [Agcc_impl_linux-64-15 | 74.2 MB   | #2         |  13% 
+
+
+libstdcxx-devel_linu | 13.0 MB   | ##5        |  26% [A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   | 4          |   4% [A[Agcc_impl_linux-64-15 | 74.2 MB   | #6         |  16% 
+sysroot_linux-64-2.3 | 40.1 MB   | ##4        |  25% [A
+
+
+libstdcxx-devel_linu | 13.0 MB   | ###        |  31% [A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   | 5          |   6% [A[Agcc_impl_linux-64-15 | 74.2 MB   | #9         |  20% 
+sysroot_linux-64-2.3 | 40.1 MB   | ###        |  30% [A
+
+
+libstdcxx-devel_linu | 13.0 MB   | ###6       |  36% [A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   | 8          |   8% [A[A
+sysroot_linux-64-2.3 | 40.1 MB   | ###5       |  35% [A
+
+
+
+
+binutils_impl_linux- | 3.6 MB    |            |   0% [A[A[A[A[Agcc_impl_linux-64-15 | 74.2 MB   | ##2        |  23% 
+
+
+libstdcxx-devel_linu | 13.0 MB   | ####1      |  41% [A[A[A
+sysroot_linux-64-2.3 | 40.1 MB   | ####2      |  42% [Agcc_impl_linux-64-15 | 74.2 MB   | ##7        |  27% 
+
+gxx_impl_linux-64-15 | 15.5 MB   | #1         |  12% [A[A
+
+
+
+
+binutils_impl_linux- | 3.6 MB    | 9          |   9% [A[A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | ####6      |  47% [A[A[A
+sysroot_linux-64-2.3 | 40.1 MB   | ####8      |  49% [Agcc_impl_linux-64-15 | 74.2 MB   | ###1       |  32% 
+
+gxx_impl_linux-64-15 | 15.5 MB   | #7         |  17% [A[A
+
+
+
+
+binutils_impl_linux- | 3.6 MB    | ####3      |  43% [A[A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | #####1     |  51% [A[A[A
+sysroot_linux-64-2.3 | 40.1 MB   | #####4     |  54% [Agcc_impl_linux-64-15 | 74.2 MB   | ###5       |  36% 
+
+gxx_impl_linux-64-15 | 15.5 MB   | ##3        |  24% [A[A
+
+
+
+
+binutils_impl_linux- | 3.6 MB    | ######9    |  70% [A[A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | #####7     |  58% [A[A[A
+sysroot_linux-64-2.3 | 40.1 MB   | ######     |  60% [Agcc_impl_linux-64-15 | 74.2 MB   | ###9       |  39% 
+
+gxx_impl_linux-64-15 | 15.5 MB   | ##8        |  29% [A[A
+
+
+
+
+binutils_impl_linux- | 3.6 MB    | ########## | 100% [A[A[A[A[A
+
+
+
+
+binutils_impl_linux- | 3.6 MB    | ########## | 100% [A[A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | ######3    |  64% [A[A[A
+sysroot_linux-64-2.3 | 40.1 MB   | ######5    |  66% [Agcc_impl_linux-64-15 | 74.2 MB   | ####3      |  44% 
+
+gxx_impl_linux-64-15 | 15.5 MB   | ###5       |  36% [A[A
+
+
+
+
+binutils_impl_linux- | 3.6 MB    | ########## | 100% [A[A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | ######9    |  69% [A[A[A
+sysroot_linux-64-2.3 | 40.1 MB   | #######2   |  73% [Agcc_impl_linux-64-15 | 74.2 MB   | ####8      |  49% 
+
+gxx_impl_linux-64-15 | 15.5 MB   | ####2      |  42% [A[A
+
+
+
+
+
+openssl-3.6.3        | 3.0 MB    |            |   1% [A[A[A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | #######4   |  74% [A[A[A
+sysroot_linux-64-2.3 | 40.1 MB   | #######8   |  79% [Agcc_impl_linux-64-15 | 74.2 MB   | #####2     |  53% 
+
+gxx_impl_linux-64-15 | 15.5 MB   | #####1     |  51% [A[A
+
+
+
+
+
+openssl-3.6.3        | 3.0 MB    | ####       |  41% [A[A[A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | #######9   |  80% [A[A[A
+sysroot_linux-64-2.3 | 40.1 MB   | ########4  |  85% [Agcc_impl_linux-64-15 | 74.2 MB   | #####6     |  57% 
+
+gxx_impl_linux-64-15 | 15.5 MB   | #####7     |  58% [A[A
+
+
+
+
+
+openssl-3.6.3        | 3.0 MB    | #######2   |  73% [A[A[A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | ########4  |  85% [A[A[A
+
+
+
+
+
+openssl-3.6.3        | 3.0 MB    | ########## | 100% [A[A[A[A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   | ######3    |  64% [A[A
+sysroot_linux-64-2.3 | 40.1 MB   | #########  |  91% [Agcc_impl_linux-64-15 | 74.2 MB   | ######     |  61% 
+
+
+
+
+
+openssl-3.6.3        | 3.0 MB    | ########## | 100% [A[A[A[A[A[A
+
+
+
+
+
+openssl-3.6.3        | 3.0 MB    | ########## | 100% [A[A[A[A[A[A
+
+
+libstdcxx-devel_linu | 13.0 MB   | ########9  |  90% [A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   | #######1   |  72% [A[Agcc_impl_linux-64-15 | 74.2 MB   | ######4    |  64% 
+sysroot_linux-64-2.3 | 40.1 MB   | #########5 |  96% [A
+
+
+libstdcxx-devel_linu | 13.0 MB   | #########7 |  98% [A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   | ########   |  80% [A[A
+
+
+
+
+
+
+libgcc-devel_linux-6 | 2.6 MB    |            |   1% [A[A[A[A[A[A[Agcc_impl_linux-64-15 | 74.2 MB   | ######8    |  68% 
+
+
+libstdcxx-devel_linu | 13.0 MB   | ########## | 100% [A[A[A
+sysroot_linux-64-2.3 | 40.1 MB   | ########## | 100% [A
+
+gxx_impl_linux-64-15 | 15.5 MB   | ########8  |  88% [A[A
+
+
+
+
+
+
+libgcc-devel_linux-6 | 2.6 MB    | #####5     |  56% [A[A[A[A[A[A[Agcc_impl_linux-64-15 | 74.2 MB   | #######1   |  72% 
+
+
+
+
+
+
+libgcc-devel_linux-6 | 2.6 MB    | ########## | 100% [A[A[A[A[A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   | #########5 |  96% [A[Agcc_impl_linux-64-15 | 74.2 MB   | #######5   |  75% 
+
+
+
+
+
+
+libgcc-devel_linux-6 | 2.6 MB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+libgcc-devel_linux-6 | 2.6 MB    | ########## | 100% [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+kernel-headers_linux | 1.5 MB    | 1          |   1% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+conda-26.7.0         | 1.4 MB    | 1          |   1% [A[A[A[A[A[A[A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   | ########## | 100% [A[A
+
+
+
+
+
+
+
+
+
+
+certifi-2026.7.22    | 134 KB    | #1         |  12% [A[A[A[A[A[A[A[A[A[A[Agcc_impl_linux-64-15 | 74.2 MB   | #######8   |  79% 
+
+
+
+
+
+
+
+
+
+
+certifi-2026.7.22    | 134 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+conda-26.7.0         | 1.4 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+kernel-headers_linux | 1.5 MB    | #####6     |  56% [A[A[A[A[A[A[A[Agcc_impl_linux-64-15 | 74.2 MB   | ########3  |  84% 
+
+
+
+
+
+
+
+kernel-headers_linux | 1.5 MB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libgomp-15.2.0       | 437 KB    | 3          |   4% [A[A[A[A[A[A[A[A[A[Agcc_impl_linux-64-15 | 74.2 MB   | ########7  |  88% 
+
+
+
+
+
+
+
+
+
+libgomp-15.2.0       | 437 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+conda-gcc-specs-15.2 | 32 KB     | #####      |  51% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+conda-gcc-specs-15.2 | 32 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+gcc-15.2.0           | 30 KB     | #####2     |  53% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+gcc-15.2.0           | 30 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+gxx_impl_linux-64-15 | 15.5 MB   | ########## | 100% [A[A
+
+
+
+
+
+
+
+
+
+
+certifi-2026.7.22    | 134 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+certifi-2026.7.22    | 134 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A[Agcc_impl_linux-64-15 | 74.2 MB   | #########4 |  94% 
+
+
+libstdcxx-devel_linu | 13.0 MB   | ########## | 100% [A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+gxx-15.2.0           | 30 KB     | #####3     |  54% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+gxx-15.2.0           | 30 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+conda-26.7.0         | 1.4 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+conda-26.7.0         | 1.4 MB    | ########## | 100% [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libgomp-15.2.0       | 437 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+libgomp-15.2.0       | 437 KB    | ########## | 100% [A[A[A[A[A[A[A[A[A[Agcc_impl_linux-64-15 | 74.2 MB   | ########## | 100% gcc_impl_linux-64-15 | 74.2 MB   | ########## | 100% 
+
+
+
+
+
+
+
+
+
+
+
+conda-gcc-specs-15.2 | 32 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+conda-gcc-specs-15.2 | 32 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+gcc-15.2.0           | 30 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+gcc-15.2.0           | 30 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+gxx-15.2.0           | 30 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+gxx-15.2.0           | 30 KB     | ########## | 100% [A[A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+kernel-headers_linux | 1.5 MB    | ########## | 100% [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+kernel-headers_linux | 1.5 MB    | ########## | 100% [A[A[A[A[A[A[A[A
+sysroot_linux-64-2.3 | 40.1 MB   | ########## | 100% [Agcc_impl_linux-64-15 | 74.2 MB   | ########## | 100%                                                      
+                                                     [A
+
+                                                     [A[A
+
+
+                                                     [A[A[A
+
+
+
+                                                     [A[A[A[A
+
+
+
+
+                                                     [A[A[A[A[A
+
+
+
+
+
+                                                     [A[A[A[A[A[A
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                     [A[A[A[A[A[A[A[A[A[A[A[A[A[A done
+Preparing transaction: | done
+Verifying transaction: - \ | / done
+Executing transaction: \ | / - \ | / - \ | / - \ done
+
+Channel "defaults" has the following notices:
+  [info] -- Thu Aug  6 00:00:00 2026
+  main-x (Anaconda's new authenticated channel) is now generally available, with thousands of additional packages from our secure supply chain. Get started at: https://anaconda.com/docs/getting-started/main-x?utm_source=channel_notices
+

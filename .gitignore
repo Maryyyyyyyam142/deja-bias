@@ -1,0 +1,5 @@
+__pycache__/
+# mtime-preserving snapshot; its sha256 is recorded in archive/MANIFEST_*.txt
+archive/*.tar.gz
+# third-party dataset (HF copenlu/sofa), 168 MB; hash in the manifest, copy in the tarball
+data/sofa.csv

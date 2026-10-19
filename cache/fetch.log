@@ -1,0 +1,87 @@
+[cache] 915 responses loaded
+[plan] 9606 sentences, 3965 unique queries, 3580 uncached
+[limit] HTTP 403; rate -> 1.49 q/s
+[limit] HTTP 403; rate -> 1.19 q/s
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[250/3580] 0.81 q/s  eta 69m
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[limit] HTTP 403; rate -> 1.05 q/s
+[limit] HTTP 403; rate -> 0.84 q/s
+[500/3580] 0.81 q/s  eta 63m
+[limit] HTTP 403; rate -> 1.02 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[750/3580] 0.79 q/s  eta 60m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[1000/3580] 0.79 q/s  eta 55m
+[limit] HTTP 403; rate -> 0.93 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.03 q/s
+[limit] HTTP 403; rate -> 0.82 q/s
+[1250/3580] 0.79 q/s  eta 49m
+[limit] HTTP 403; rate -> 0.96 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.92 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[1500/3580] 0.78 q/s  eta 45m
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[limit] HTTP 403; rate -> 1.04 q/s
+[limit] HTTP 403; rate -> 0.83 q/s
+[1750/3580] 0.78 q/s  eta 39m
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.92 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.93 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[2000/3580] 0.78 q/s  eta 34m
+[limit] HTTP 403; rate -> 0.96 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[2250/3580] 0.78 q/s  eta 29m
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[limit] HTTP 403; rate -> 1.00 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[2500/3580] 0.78 q/s  eta 23m
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.93 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 1.01 q/s
+[limit] HTTP 403; rate -> 0.81 q/s
+[2750/3580] 0.77 q/s  eta 18m
+[limit] HTTP 403; rate -> 1.07 q/s
+[limit] HTTP 403; rate -> 0.85 q/s
+[limit] HTTP 403; rate -> 0.92 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[3000/3580] 0.78 q/s  eta 12m
+[limit] HTTP 403; rate -> 0.99 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.95 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[limit] HTTP 403; rate -> 0.93 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[3250/3580] 0.77 q/s  eta 7m
+[limit] HTTP 403; rate -> 1.03 q/s
+[limit] HTTP 403; rate -> 0.82 q/s
+[limit] HTTP 403; rate -> 1.06 q/s
+[limit] HTTP 403; rate -> 0.85 q/s
+[3500/3580] 0.78 q/s  eta 2m
+[limit] HTTP 403; rate -> 0.97 q/s
+[limit] HTTP 403; rate -> 0.80 q/s
+[done] 3580 queries in 77.0 min
