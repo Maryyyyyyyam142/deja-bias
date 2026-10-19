@@ -1,5 +1,10 @@
 # Task 2, Phase A — Gate Verdict
 
+> **Corrections added 2026-10-19 — read §8 first.** The §1 decomposition table and
+> its headline are withdrawn, H5 does not survive few-cluster standard errors, and
+> "pre-registered" here means specified in `preregistration.md`, which was never
+> posted to a registry. §1–§7 are otherwise left as written in August.
+
 **Verdict: STOP AND REPORT (§6, row 2).** β is null under both scoring variants,
 and negative for the contamination-specific estimand. This is a well-identified
 null on a documented contamination route.
@@ -129,3 +134,70 @@ Three honest options, in order of my preference:
 3. **Do not run Phases B and C as specified.** They extend a design whose primary
    estimand has already returned a null; scaling the model panel will not change
    the sign of `dose_natinst`.
+
+## 8. Corrections, 2026-10-19
+
+Added after re-checking this file against the data. Read §1–§7 with these
+corrections. The new checks are in `robustness.py`, with output in
+`results/robustness.md`; none of them is in the pre-specified plan.
+
+1. **"Pre-registered" means pre-specified, not registered.** `preregistration.md`
+   was written before any model was scored but was never posted to a registry. In
+   the paper, call it an analysis plan written before scoring, and say it was not
+   publicly registered. The only evidence of the order is the file timestamps: plan
+   12:07, scoring job 12:16 on 2026-08-15. They are recorded in
+   `archive/MANIFEST_phaseA_2026-10-19.txt` and in the repository's first commit.
+2. **The §1 decomposition and its headline are withdrawn.** The table treats
+   `dose_dolma` as general v1.7 exposure and `dose_natinst` as the injected copies.
+   In fact 96.7% of sentences in the NatInst files are in Dolma v1.7, against 2.0% of
+   the rest, and the two log-doses correlate at 0.79. `dose_dolma` is mostly the
+   injected route, counted in the corpus. The negative `dose_natinst` coefficient
+   with `dose_dolma` held fixed cannot show that "the contamination route does not
+   move likelihood".
+   - §4's claim that the sentence-level result "excludes +0.2" falls with it.
+   - The main test is now the pair-level DiD (H3), and its 95% CI still includes +0.2.
+   - The code behind the table had not been saved; it is now `robustness.py` §A.
+   - H1–H3, the §3 benchmark scores and H8 do not depend on the table.
+3. **`dose_natinst` was double-counted.** `build_variables.py` counted each
+   single-sentence NatInst instance twice: it lacked the `len(parts) > 1` guard in
+   `ni_provenance.py`. This is now fixed and `data/variables.csv` has been regenerated.
+   - 6,534 values halved; nothing else changed.
+   - No sentence moved between zero and non-zero, so `analysis.py` output is
+     identical before and after the fix.
+   - CrowS pairs are 2 copies to 1 for 1,496 of 1,508 pairs. The pre-registration's
+     §1.2 figure, "+2 for 1,404 of 1,498", reflects the double count.
+   - The five NatInst task files (tasks 277, 279, 280, 316, 317) had been read from
+     `/tmp` and lost. They have been re-downloaded into `data/ni_tasks/`, and they
+     reproduce `data/ni_copies.json` exactly.
+4. **Standard errors.** The planned SEs cluster on bias_type (9 CrowS clusters) with
+   a normal reference, which over-rejects with this few clusters. `robustness.md` §C
+   adds four alternatives: t(G−1), a wild cluster bootstrap, pair-robust SEs and
+   writer clusters.
+   - **H1–H3 stay null** under every choice (all p > 0.27).
+   - **H5 does not survive.** The top-decile slopes were p = 0.007 (v1.7) and
+     p < 0.001 (Pythia); under the wild bootstrap they are 0.11 and 0.14.
+     Figure 2 shows the planned SEs.
+   - §2's "H5 is the methodological result worth publishing on its own" and §7
+     option 2 are withdrawn.
+   - What remains of H5 is narrower: the top-decile slope has about the same size in
+     models that never saw the copies (+0.50 / +0.38 / +0.43).
+5. **CrowS ties.** Under both planned scorers, 102 of 1,508 pairs are exact ties.
+   Nothing is scored after the swapped word, and the scored tokens before it share a
+   left context, so both members get identical log-probabilities in any causal LM.
+   The CrowS score counts ties as non-stereotypical. Excluding them moves OLMo v1.7
+   from 62.86 to 67.43, so report the tie count. The full-sentence scorer has no ties.
+6. **State the null as a bound.** Removing an exposure effect at either end of the
+   H3 95% CI gives OLMo v1.7 a CrowS score between 59.4 and 65.2 under scorer A
+   (59.8–66.5 under B), against a planned score of 62.86 (`robustness.md` §D4). The
+   data cannot rule out a shift of about 3.5 points either way. The supported claim
+   is "no detectable effect, bounded at about ±3.5 points", not "no effect".
+7. **Exploratory checks** (`robustness.md` §D1–D3).
+   - The pair-level null holds under the full-sentence scorer.
+   - The 836- and 397-copy sentences gain no more than their 1-copy partners.
+   - Within StereoSet instances, being in the leaked files goes with a gain of
+     +0.08 nats (p = 0.10). That is at most a very small effect on sentence
+     likelihood.
+8. **Open: was the treatment delivered?** The doses count the whole Dolma v1.7
+   index, not OLMo-1.7's training stream. A 1,728-copy sentence that sits only at
+   the 84th–88th percentile of gains is surprising if every copy was trained on.
+   Before reporting the null, confirm `tulu_flan`'s share of the OLMo-1.7 training mix.
