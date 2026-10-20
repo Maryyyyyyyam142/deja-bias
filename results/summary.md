@@ -197,7 +197,16 @@ corrections. The new checks are in `robustness.py`, with output in
    - Within StereoSet instances, being in the leaked files goes with a gain of
      +0.08 nats (p = 0.10). That is at most a very small effect on sentence
      likelihood.
-8. **Open: was the treatment delivered?** The doses count the whole Dolma v1.7
-   index, not OLMo-1.7's training stream. A 1,728-copy sentence that sits only at
-   the 84th–88th percentile of gains is surprising if every copy was trained on.
-   Before reporting the null, confirm `tulu_flan`'s share of the OLMo-1.7 training mix.
+8. **Treatment delivery: confirmed (2026-10-20).** `training_data_check.sh` scanned
+   all 66 `tulu_flan` shards of OLMo-1.7's stage-1 training data (16.54B tokens). The
+   shard list comes from allenai/OLMo `configs/official-0724/OLMo-7B-0424.yaml`.
+   - The training files hold exactly the copies the Dolma v1.7 index reports: 836,
+     1,728 and 397 for the three highest-dose exemplars, and 1 for the 836-copy
+     sentence's partner (`results/training_data_check.jsonl`).
+   - One pass over the stage-1 mix is 1,715B tokens, and stage 1 ran for 2T. So every
+     copy was trained on at least once, about 1.17 times on average.
+   - Per the model card, stage 2 trained on "all available ... Flan data" for the
+     final 50B tokens while the learning rate decayed to zero.
+   - The null is therefore not a delivery failure. Sentences trained on roughly
+     1,000–2,000 times, as instruction-formatted exemplars, show no detectable gain
+     in bare-sentence likelihood.
