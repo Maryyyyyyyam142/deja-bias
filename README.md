@@ -12,6 +12,14 @@ This repository traces that route and measures how often each benchmark sentence
 was copied into the training data. It then tests whether that exposure distorts the
 bias scores the benchmarks report.
 
+## Why "Déjà Bias"
+
+*Déjà* is French for "already", as in *déjà vu*, "already seen": the feeling of
+meeting something you have met before. A bias benchmark is meant to test a model on
+sentences it has never seen. Here the model had already seen them during
+pretraining, some more than a thousand times. The surprise in the results is that
+this déjà vu leaves no detectable mark on the bias score.
+
 ## Findings
 
 - **The route.** 70.3% of the 9,334 benchmark sentences appear verbatim in Dolma
