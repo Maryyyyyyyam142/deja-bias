@@ -25,7 +25,23 @@ MODELS = {
     "olmo-7b-v1.5":  ("allenai/OLMo-7B-hf",     "dolma_v1.5", "clean"),
     "olmo-7b-v1.7":  ("allenai/OLMo-1.7-7B-hf", "dolma_v1.7", "contaminated"),
     "pythia-6.9b":   ("EleutherAI/pythia-6.9b", "pile",       "clean"),
+    # OLMo 2 1B (added 2026-10-20): the same model at the end of pretraining (no
+    # leaked copies), after each of its three mid-training runs on Dolmino-mix-1124
+    # (whose FLAN part carries them), merged, and after SFT. Extra fields: revision, dtype.
+    "olmo2-1b-stage1": ("allenai/OLMo-2-0425-1B", "olmo-mix-1124", "before",
+                        "stage1-step1907359-tokens4001B", "float32"),
+    "olmo2-1b-ingr1":  ("allenai/OLMo-2-0425-1B", "dolmino-mix-1124", "after",
+                        "stage2-ingredient1-step23852-tokens51B", "float32"),
+    "olmo2-1b-ingr2":  ("allenai/OLMo-2-0425-1B", "dolmino-mix-1124", "after",
+                        "stage2-ingredient2-step23852-tokens51B", "float32"),
+    "olmo2-1b-ingr3":  ("allenai/OLMo-2-0425-1B", "dolmino-mix-1124", "after",
+                        "stage2-ingredient3-step23852-tokens51B", "float32"),
+    "olmo2-1b":        ("allenai/OLMo-2-0425-1B", "dolmino-mix-1124", "after-merged",
+                        "main", "float32"),
+    "olmo2-1b-sft":    ("allenai/OLMo-2-0425-1B-SFT", "tulu-3-sft-olmo-2-mixture-0225", "sft",
+                        "main", "float32"),
 }
+PHASE_A = ["olmo-7b-v1.5", "olmo-7b-v1.7", "pythia-6.9b"]
 
 def word_spans(text):
     """(start,end) char span of every whitespace-delimited word."""
@@ -81,11 +97,15 @@ def load_items():
 
 @torch.no_grad()
 def score_model(key, items, batch_size=16):
-    name, corpus, arm = MODELS[key]
-    print(f"[{key}] loading {name}", flush=True)
-    tok = AutoTokenizer.from_pretrained(name)
+    name, corpus, arm, revision, dtype = (MODELS[key] + ("main", "float16"))[:5]
+    print(f"[{key}] loading {name} @ {revision} ({dtype})", flush=True)
+    try:
+        tok = AutoTokenizer.from_pretrained(name, revision=revision)
+    except OSError:                         # intermediate checkpoints ship weights only
+        tok = AutoTokenizer.from_pretrained(name)
     if tok.pad_token is None: tok.pad_token = tok.eos_token
-    model = AutoModelForCausalLM.from_pretrained(name, dtype=torch.float16, device_map="cuda:0")
+    model = AutoModelForCausalLM.from_pretrained(name, revision=revision, dtype=getattr(torch, dtype),
+                                                 device_map="cuda:0")
     model.eval()
     order = sorted(range(len(items)), key=lambda i: -len(items[i]["text"]))
     out = {}
@@ -127,8 +147,11 @@ def score_model(key, items, batch_size=16):
 def main():
     items = load_items()
     print(f"{len(items)} sentences to score")
-    keys = sys.argv[1:] or list(MODELS)
+    args = sys.argv[1:]
     path = "results/likelihoods.csv"
+    if "--out" in args:                    # e.g. --out results/likelihoods_olmo2.csv
+        i = args.index("--out"); path = args[i + 1]; del args[i:i + 2]
+    keys = args or PHASE_A
     os.makedirs("results", exist_ok=True)
     exists = os.path.exists(path)
     with open(path, "a", newline="") as fh:
@@ -138,7 +161,7 @@ def main():
                         "n_scored_tokens", "full_logp_sum", "full_n_tokens"])
         for k in keys:
             res = score_model(k, items)
-            _, corpus, arm = MODELS[k]
+            _, corpus, arm = MODELS[k][:3]
             for sid, v in res.items():
                 w.writerow([sid, k, corpus, arm, f"{v['logp_sum']:.6f}", f"{v['logp_mean']:.6f}",
                             v["n_scored"], f"{v['full_logp_sum']:.6f}", v["full_n"]])
