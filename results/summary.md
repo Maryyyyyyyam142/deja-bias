@@ -210,3 +210,45 @@ corrections. The new checks are in `robustness.py`, with output in
    - The null is therefore not a delivery failure. Sentences trained on roughly
      1,000–2,000 times, as instruction-formatted exemplars, show no detectable gain
      in bare-sentence likelihood.
+
+## 9. OLMo 2 extension, 2026-10-20
+
+The extension was pre-specified in `preregistration_olmo2.md`, which was pushed to
+GitHub as commit `9156040` before any OLMo 2 model was scored. The output is in
+`results/olmo2.md`.
+
+**Design.** OLMo-2-0425-1B at the end of pretraining is compared with:
+
+- the same model after each of three independent mid-training runs on
+  Dolmino-mix-1124;
+- the merged release;
+- the release after SFT on Tulu 3.
+
+OLMo 2's pretraining data contains none of the copies. Dolmino's FLAN part holds
+23,746 copies of 6,701 benchmark sentences (`data/dose_olmo2.csv`), and Tulu 3 holds
+158 copies of 127 sentences. So this compares the same weights before and after
+exposure, which is cleaner than Phase A's OLMo-1.0 vs OLMo-1.7.
+
+| # | Prediction | Result | Verdict |
+|---|---|---|---|
+| P1 | Sentence-level β null or small positive (< 0.2), with the same sign in all runs | Scorer A: −0.018 to +0.010, all p > 0.5. Scorer B: +0.008 to +0.014, p 0.05–0.25. Full-sentence scorer: +0.068 to +0.093 in each run (p 0.007–0.05), and +0.004 for the merged model | **Confirmed**: at most a small effect, well under 0.2 |
+| P2 | Bias-score DiD β ≈ 0 in all runs | All 12 run × scorer CIs cover 0 (p 0.40–0.95); the merged and SFT models are null too. The CrowS score is bounded within about ±2–3 points | **Confirmed** |
+| P3 | The top exemplars gain no more than their partners and stay below the 95th percentile | The 926-copy CrowS sentence gains 1.3–2.5 nats more than its 1-copy partner in every run, and 4.1 more in the merged model. The 1,940-copy StereoSet sentence sits at the 97th–99th percentile (full scorer) in every run, but the 30th in the merged model. The 448-copy sentence shows no excess | **Refuted for the two most-copied sentences**: modest memorisation within individual runs |
+| P4 | No dose effect at SFT | P1 and P2 are null for base → SFT | **Confirmed** |
+
+**Reading.**
+
+- **Bias score.** In the cleanest design available, exposure during mid-training
+  leaves the bias score unmoved, and this replicates across three independent runs.
+- **The most-copied sentences.** The two most-copied exemplars show some
+  memorisation, but the pair metric doesn't register it. Whole files leak together,
+  and only a handful of sentences are copied hundreds of times.
+
+**Limitations.**
+
+- Only the 1B model has been tested.
+- The doses count copies in the Dolmino data. How many copies each 50B-token run
+  actually saw is not recorded.
+- P3 rests on two sentences.
+
+**Next.** Run OLMo 2 7B, which fits on one idle GPU, under the same plan unchanged.

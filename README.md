@@ -41,6 +41,14 @@ this déjà vu leaves no detectable mark on the bias score.
     ±3.5 points.
   - Even sentences trained on roughly 1,000–2,000 times gained no more likelihood
     than their 1-copy partners or than typical benchmark sentences.
+- **A cleaner test.** In OLMo 2, the copies enter only during mid-training. So the
+  same 1B model can be compared before and after exposure, in three independent
+  mid-training runs.
+  - The bias score again does not move.
+  - The two most-copied sentences show some memorisation, but the pair-based bias
+    score does not register it.
+  - This test was pre-specified before any scoring; see
+    [`results/olmo2.md`](results/olmo2.md).
 - **A measurement caveat.** Under causal-LM scoring of the shared tokens, 102 of
   1,508 CrowS-Pairs pairs are exact ties. How those ties are counted moves the score
   by 4.6 points, which is more than any contamination effect the data can detect.
@@ -65,6 +73,8 @@ every later correction and deviation. The post-hoc checks are in
 | `analysis.py` | The planned analyses (H1–H8) |
 | `robustness.py` | Post-hoc checks: SE sensitivity, full-sentence scorer, ties, the null stated as a bound |
 | `training_data_check.py`, `training_data_check.sh` | Scan of OLMo-1.7's `tulu_flan` training shards (about 33 GB of downloads) |
+| `preregistration_olmo2.md`, `olmo2.py` | The OLMo 2 extension: the plan (pushed before scoring) and the analysis (`results/olmo2.md`) |
+| `olmo2_doses.py`, `olmo2_doses.sh` | Per-sentence exposure in OLMo 2's mid-training and SFT data (`data/dose_olmo2.csv`) |
 | `figures.py` | Figures in `figures/` |
 | `archive/` | Hashes and original timestamps of every file as of the August analysis |
 

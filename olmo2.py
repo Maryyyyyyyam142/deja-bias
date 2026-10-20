@@ -113,6 +113,11 @@ for lab, b, a, dose in [s for s in STEPS if s[3] == "dose_dolmino"]:
             f"{len(T):,} / {T['item'].nunique():,} |")
 
 out("\n## Deviations from preregistration_olmo2.md\n")
-out("None at the time of writing.")
+out("- 20 texts are each shared by two benchmark sentences (duplicate CrowS pairs and StereoSet")
+out("  items). Both sentences get the text's count, as with infini-gram. This was decided while")
+out("  building `data/dose_olmo2.csv`, before this analysis was first run.")
+out("- The SFT checkpoint ships `pytorch_model.bin`, not safetensors, so it was scored after a")
+out("  second download. No analysis was changed after scoring.")
+out("- This deviations text is the only part of `olmo2.py` edited after the results were seen.")
 open(OUTP, "w").write("\n".join(OUT) + "\n")
 print(f"\nwrote {OUTP}")

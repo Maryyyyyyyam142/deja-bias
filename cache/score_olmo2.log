@@ -1,0 +1,150 @@
+9334 sentences to score
+[olmo2-1b-stage1] loading allenai/OLMo-2-0425-1B @ stage1-step1907359-tokens4001B (float32)
+Loading weights:   0%|          | 0/179 [00:00<?, ?it/s]Loading weights:   1%|          | 1/179 [00:00<00:18,  9.43it/s]Loading weights:  39%|███▉      | 70/179 [00:00<00:00, 396.97it/s]Loading weights:  76%|███████▌  | 136/179 [00:00<00:00, 512.60it/s]Loading weights: 100%|██████████| 179/179 [00:00<00:00, 487.19it/s]
+  [olmo2-1b-stage1] 16/9334  11 sent/s
+  [olmo2-1b-stage1] 656/9334  109 sent/s
+  [olmo2-1b-stage1] 1296/9334  136 sent/s
+  [olmo2-1b-stage1] 1936/9334  154 sent/s
+  [olmo2-1b-stage1] 2576/9334  166 sent/s
+  [olmo2-1b-stage1] 3216/9334  178 sent/s
+  [olmo2-1b-stage1] 3856/9334  188 sent/s
+  [olmo2-1b-stage1] 4496/9334  197 sent/s
+  [olmo2-1b-stage1] 5136/9334  205 sent/s
+  [olmo2-1b-stage1] 5776/9334  212 sent/s
+  [olmo2-1b-stage1] 6416/9334  219 sent/s
+  [olmo2-1b-stage1] 7056/9334  225 sent/s
+  [olmo2-1b-stage1] 7696/9334  230 sent/s
+  [olmo2-1b-stage1] 8336/9334  236 sent/s
+  [olmo2-1b-stage1] 8976/9334  242 sent/s
+[olmo2-1b-stage1] done in 0.6 min
+[olmo2-1b-stage1] wrote 9334 rows
+[olmo2-1b-ingr1] loading allenai/OLMo-2-0425-1B @ stage2-ingredient1-step23852-tokens51B (float32)
+Loading weights:   0%|          | 0/179 [00:00<?, ?it/s]Loading weights:   2%|▏         | 4/179 [00:00<00:04, 39.79it/s]Loading weights:  39%|███▉      | 70/179 [00:00<00:00, 397.10it/s]Loading weights:  77%|███████▋  | 137/179 [00:00<00:00, 519.96it/s]Loading weights: 100%|██████████| 179/179 [00:00<00:00, 499.15it/s]
+  [olmo2-1b-ingr1] 16/9334  88 sent/s
+  [olmo2-1b-ingr1] 656/9334  135 sent/s
+  [olmo2-1b-ingr1] 1296/9334  152 sent/s
+  [olmo2-1b-ingr1] 1936/9334  165 sent/s
+  [olmo2-1b-ingr1] 2576/9334  175 sent/s
+  [olmo2-1b-ingr1] 3216/9334  186 sent/s
+  [olmo2-1b-ingr1] 3856/9334  194 sent/s
+  [olmo2-1b-ingr1] 4496/9334  202 sent/s
+  [olmo2-1b-ingr1] 5136/9334  209 sent/s
+  [olmo2-1b-ingr1] 5776/9334  215 sent/s
+  [olmo2-1b-ingr1] 6416/9334  222 sent/s
+  [olmo2-1b-ingr1] 7056/9334  227 sent/s
+  [olmo2-1b-ingr1] 7696/9334  232 sent/s
+  [olmo2-1b-ingr1] 8336/9334  237 sent/s
+  [olmo2-1b-ingr1] 8976/9334  243 sent/s
+[olmo2-1b-ingr1] done in 0.6 min
+[olmo2-1b-ingr1] wrote 9334 rows
+[olmo2-1b-ingr2] loading allenai/OLMo-2-0425-1B @ stage2-ingredient2-step23852-tokens51B (float32)
+Loading weights:   0%|          | 0/179 [00:00<?, ?it/s]Loading weights:   3%|▎         | 5/179 [00:00<00:03, 49.26it/s]Loading weights:  44%|████▍     | 79/179 [00:00<00:00, 451.48it/s]Loading weights:  82%|████████▏ | 147/179 [00:00<00:00, 545.72it/s]Loading weights: 100%|██████████| 179/179 [00:00<00:00, 515.79it/s]
+  [olmo2-1b-ingr2] 16/9334  86 sent/s
+  [olmo2-1b-ingr2] 656/9334  132 sent/s
+  [olmo2-1b-ingr2] 1296/9334  148 sent/s
+  [olmo2-1b-ingr2] 1936/9334  160 sent/s
+  [olmo2-1b-ingr2] 2576/9334  170 sent/s
+  [olmo2-1b-ingr2] 3216/9334  180 sent/s
+  [olmo2-1b-ingr2] 3856/9334  188 sent/s
+  [olmo2-1b-ingr2] 4496/9334  196 sent/s
+  [olmo2-1b-ingr2] 5136/9334  203 sent/s
+  [olmo2-1b-ingr2] 5776/9334  210 sent/s
+  [olmo2-1b-ingr2] 6416/9334  216 sent/s
+  [olmo2-1b-ingr2] 7056/9334  222 sent/s
+  [olmo2-1b-ingr2] 7696/9334  227 sent/s
+  [olmo2-1b-ingr2] 8336/9334  232 sent/s
+  [olmo2-1b-ingr2] 8976/9334  238 sent/s
+[olmo2-1b-ingr2] done in 0.6 min
+[olmo2-1b-ingr2] wrote 9334 rows
+[olmo2-1b-ingr3] loading allenai/OLMo-2-0425-1B @ stage2-ingredient3-step23852-tokens51B (float32)
+Loading weights:   0%|          | 0/179 [00:00<?, ?it/s]Loading weights:   2%|▏         | 3/179 [00:00<00:05, 29.97it/s]Loading weights:  39%|███▉      | 70/179 [00:00<00:00, 404.90it/s]Loading weights:  77%|███████▋  | 137/179 [00:00<00:00, 516.87it/s]Loading weights: 100%|██████████| 179/179 [00:00<00:00, 498.43it/s]
+  [olmo2-1b-ingr3] 16/9334  85 sent/s
+  [olmo2-1b-ingr3] 656/9334  132 sent/s
+  [olmo2-1b-ingr3] 1296/9334  148 sent/s
+  [olmo2-1b-ingr3] 1936/9334  162 sent/s
+  [olmo2-1b-ingr3] 2576/9334  172 sent/s
+  [olmo2-1b-ingr3] 3216/9334  182 sent/s
+  [olmo2-1b-ingr3] 3856/9334  190 sent/s
+  [olmo2-1b-ingr3] 4496/9334  198 sent/s
+  [olmo2-1b-ingr3] 5136/9334  205 sent/s
+  [olmo2-1b-ingr3] 5776/9334  211 sent/s
+  [olmo2-1b-ingr3] 6416/9334  218 sent/s
+  [olmo2-1b-ingr3] 7056/9334  223 sent/s
+  [olmo2-1b-ingr3] 7696/9334  228 sent/s
+  [olmo2-1b-ingr3] 8336/9334  233 sent/s
+  [olmo2-1b-ingr3] 8976/9334  239 sent/s
+[olmo2-1b-ingr3] done in 0.6 min
+[olmo2-1b-ingr3] wrote 9334 rows
+[olmo2-1b] loading allenai/OLMo-2-0425-1B @ main (float32)
+Loading weights:   0%|          | 0/179 [00:00<?, ?it/s]Loading weights:   3%|▎         | 5/179 [00:00<00:03, 48.41it/s]Loading weights:  42%|████▏     | 75/179 [00:00<00:00, 422.41it/s]Loading weights:  81%|████████  | 145/179 [00:00<00:00, 545.94it/s]Loading weights: 100%|██████████| 179/179 [00:00<00:00, 504.40it/s]
+  [olmo2-1b] 16/9334  86 sent/s
+  [olmo2-1b] 656/9334  132 sent/s
+  [olmo2-1b] 1296/9334  148 sent/s
+  [olmo2-1b] 1936/9334  161 sent/s
+  [olmo2-1b] 2576/9334  171 sent/s
+  [olmo2-1b] 3216/9334  182 sent/s
+  [olmo2-1b] 3856/9334  190 sent/s
+  [olmo2-1b] 4496/9334  198 sent/s
+  [olmo2-1b] 5136/9334  205 sent/s
+  [olmo2-1b] 5776/9334  211 sent/s
+  [olmo2-1b] 6416/9334  218 sent/s
+  [olmo2-1b] 7056/9334  223 sent/s
+  [olmo2-1b] 7696/9334  229 sent/s
+  [olmo2-1b] 8336/9334  234 sent/s
+  [olmo2-1b] 8976/9334  240 sent/s
+[olmo2-1b] done in 0.6 min
+[olmo2-1b] wrote 9334 rows
+[olmo2-1b-sft] loading allenai/OLMo-2-0425-1B-SFT @ main (float32)
+Traceback (most recent call last):
+  File "/home/fatima/cl_particepation/scorer.py", line 172, in <module>
+    main()
+    ~~~~^^
+  File "/home/fatima/cl_particepation/scorer.py", line 163, in main
+    res = score_model(k, items)
+  File "/home/fatima/miniconda3/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/fatima/cl_particepation/scorer.py", line 107, in score_model
+    model = AutoModelForCausalLM.from_pretrained(name, revision=revision, dtype=getattr(torch, dtype),
+                                                 device_map="cuda:0")
+  File "/home/fatima/miniconda3/lib/python3.14/site-packages/transformers/models/auto/auto_factory.py", line 402, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fatima/miniconda3/lib/python3.14/site-packages/transformers/modeling_utils.py", line 4248, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/fatima/miniconda3/lib/python3.14/site-packages/transformers/modeling_utils.py", line 746, in _get_resolved_checkpoint_files
+    raise OSError(
+    ...<2 lines>...
+    )
+OSError: allenai/OLMo-2-0425-1B-SFT does not appear to have a file named pytorch_model.bin or model.safetensors.
+9334 sentences to score
+[olmo2-1b-sft] loading allenai/OLMo-2-0425-1B-SFT @ main (float32)
+Loading weights:   0%|          | 0/179 [00:00<?, ?it/s]Loading weights:   1%|          | 1/179 [00:00<00:53,  3.35it/s]Loading weights:  20%|██        | 36/179 [00:00<00:01, 104.89it/s]Loading weights:  39%|███▊      | 69/179 [00:00<00:00, 168.20it/s]Loading weights:  57%|█████▋    | 102/179 [00:00<00:00, 205.19it/s]Loading weights:  75%|███████▌  | 135/179 [00:00<00:00, 224.84it/s]Loading weights:  94%|█████████▍| 168/179 [00:00<00:00, 241.38it/s]Loading weights: 100%|██████████| 179/179 [00:00<00:00, 199.07it/s]
+  [olmo2-1b-sft] 16/9334  18 sent/s
+  [olmo2-1b-sft] 656/9334  123 sent/s
+  [olmo2-1b-sft] 1296/9334  147 sent/s
+  [olmo2-1b-sft] 1936/9334  163 sent/s
+  [olmo2-1b-sft] 2576/9334  175 sent/s
+  [olmo2-1b-sft] 3216/9334  187 sent/s
+  [olmo2-1b-sft] 3856/9334  196 sent/s
+  [olmo2-1b-sft] 4496/9334  204 sent/s
+  [olmo2-1b-sft] 5136/9334  212 sent/s
+  [olmo2-1b-sft] 5776/9334  219 sent/s
+  [olmo2-1b-sft] 6416/9334  226 sent/s
+  [olmo2-1b-sft] 7056/9334  232 sent/s
+  [olmo2-1b-sft] 7696/9334  238 sent/s
+  [olmo2-1b-sft] 8336/9334  243 sent/s
+  [olmo2-1b-sft] 8976/9334  249 sent/s
+[olmo2-1b-sft] done in 0.6 min
+[olmo2-1b-sft] wrote 9334 rows
