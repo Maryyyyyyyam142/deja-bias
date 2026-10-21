@@ -42,13 +42,16 @@ this déjà vu leaves no detectable mark on the bias score.
   - Even sentences trained on roughly 1,000–2,000 times gained no more likelihood
     than their 1-copy partners or than typical benchmark sentences.
 - **A cleaner test.** In OLMo 2, the copies enter only during mid-training. So the
-  same 1B model can be compared before and after exposure, in three independent
-  mid-training runs.
+  same model can be compared before and after exposure, in three independent
+  mid-training runs, at both 1B and 7B.
   - The bias score again does not move.
-  - The two most-copied sentences show some memorisation, but the pair-based bias
-    score does not register it.
-  - This test was pre-specified before any scoring; see
-    [`results/olmo2.md`](results/olmo2.md).
+  - The exposure is learned: at 7B, likelihood rises with the number of copies, and
+    the most-copied sentences are memorised in every run.
+  - It doesn't reach the score, because only 2 CrowS-Pairs pairs have a large
+    one-sided dose, worth at most 0.13 points.
+  - The test was pre-specified before any scoring; see
+    [`results/olmo2.md`](results/olmo2.md) (1B) and
+    [`results/olmo2_7b.md`](results/olmo2_7b.md) (7B).
 - **A measurement caveat.** Under causal-LM scoring of the shared tokens, 102 of
   1,508 CrowS-Pairs pairs are exact ties. How those ties are counted moves the score
   by 4.6 points, which is more than any contamination effect the data can detect.

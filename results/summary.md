@@ -244,11 +244,35 @@ exposure, which is cleaner than Phase A's OLMo-1.0 vs OLMo-1.7.
   memorisation, but the pair metric doesn't register it. Whole files leak together,
   and only a handful of sentences are copied hundreds of times.
 
+**7B replication, 2026-10-21.** This used the same plan, with the predictions
+unchanged after the 1B results. The setup was pushed as commit `27af631` before any
+7B checkpoint was scored, and the output is in `results/olmo2_7b.md`. One deviation:
+the 7B was scored in fp16, because fp32 does not fit on one idle GPU.
+
+| # | 7B result | Verdict |
+|---|---|---|
+| P1 | Scorer A: +0.005 to +0.016, all p > 0.5. Scorer B: +0.021 to +0.023 in every run (p 0.002–0.005). Full-sentence scorer: +0.101 to +0.127 in every run (p ≤ 0.003), and the same for the merged model | **Confirmed**, and clearer than at 1B: a small, replicated dose-response, still under 0.2 |
+| P2 | All CIs cover 0 (p 0.12–0.97), including the merged and SFT models. The CrowS score is bounded within about ±2.5 points | **Confirmed** |
+| P3 | The 926-copy CrowS sentence gains 3.1–4.8 nats more than its 1-copy partner in every run. The 448-copy sentence gains 1.1–1.3 more under the full scorer. The 1,940-copy StereoSet sentence sits at the 94th–98th percentile | **Refuted for all three**: memorisation grows with model size |
+| P4 | Null | **Confirmed** |
+
+**Reading across 1B and 7B.** This is the plan's second scenario: P1 positive, P2
+null.
+
+- **Exposure is learned.** The 7B model's sentence likelihood rises with the number
+  of copies, and it memorises the most-copied exemplars in every run.
+- **The bias score still does not move.** Both members of almost every pair leaked
+  together, and only 2 CrowS pairs have a large one-sided dose (836 or 926, and 397
+  or 448, against 1). Even if contamination decided both of those pairs, the CrowS
+  score would move by at most 0.13 points (2 of 1,508 pairs).
+- **What that means for the original hypothesis.** It holds where template authors
+  made one sentence an exemplar, but those pairs are too few to distort the
+  benchmark score.
+
 **Limitations.**
 
-- Only the 1B model has been tested.
+- Two model sizes have been tested, 1B and 7B. 13B needs more memory than one idle
+  GPU has.
 - The doses count copies in the Dolmino data. How many copies each 50B-token run
   actually saw is not recorded.
-- P3 rests on two sentences.
-
-**Next.** Run OLMo 2 7B, which fits on one idle GPU, under the same plan unchanged.
+- P3 rests on three sentences.
