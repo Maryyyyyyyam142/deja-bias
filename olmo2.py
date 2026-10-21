@@ -4,24 +4,30 @@ OLMo 2 likelihood was computed). The same 1B model before and after mid-training
 Dolmino-mix-1124, whose FLAN part carries the leaked SNI bias tasks: three
 independent mid-training runs, their merge, then SFT on Tulu 3.
 
-  python3 olmo2.py [likelihoods_csv] [dose_csv] [out_md]
-Defaults: results/likelihoods_olmo2.csv data/dose_olmo2.csv results/olmo2.md
+  python3 olmo2.py [--size 1b|7b] [likelihoods_csv] [dose_csv] [out_md]
+Defaults: --size 1b, results/likelihoods_olmo2.csv, data/dose_olmo2.csv, and
+results/olmo2.md (results/olmo2_7b.md for --size 7b).
 """
 import json, sys, numpy as np, pandas as pd, statsmodels.formula.api as smf
 
-LIK, DOSE, OUTP = (sys.argv[1:] + ["results/likelihoods_olmo2.csv", "data/dose_olmo2.csv",
-                                    "results/olmo2.md"][len(sys.argv[1:]):])[:3]
+args = sys.argv[1:]; SIZE = "1b"
+if "--size" in args:                       # --size 7b: the same analysis on OLMo-2-1124-7B
+    i = args.index("--size"); SIZE = args[i + 1]; del args[i:i + 2]
+MODEL, SFT_DOSE = {"1b": ("OLMo-2-0425-1B", "dose_tulu3"), "7b": ("OLMo-2-1124-7B", "dose_tulu3_1124")}[SIZE]
+LIK, DOSE, OUTP = (args + ["results/likelihoods_olmo2.csv", "data/dose_olmo2.csv",
+                           "results/olmo2.md" if SIZE == "1b" else f"results/olmo2_{SIZE}.md"][len(args):])[:3]
 L = pd.read_csv(LIK)
 V = pd.read_csv("data/variables.csv").merge(pd.read_csv(DOSE), on="sentence_id", how="left")
-V[["dose_dolmino", "dose_tulu3"]] = V[["dose_dolmino", "dose_tulu3"]].fillna(0)
+V[["dose_dolmino", SFT_DOSE]] = V[["dose_dolmino", SFT_DOSE]].fillna(0)
 ss = json.load(open("data/stereoset_dev.json"))["data"]["intrasentence"]
 INST = {f"ss-{s['id']}": i["id"] for i in ss for s in i["sentences"]}
 V["item"] = np.where(V.source_dataset == "crows_pairs", V.pair_id, V.sentence_id.map(INST))
-STEPS = [("pretraining → mid-training run 1", "olmo2-1b-stage1", "olmo2-1b-ingr1", "dose_dolmino"),
-         ("pretraining → mid-training run 2", "olmo2-1b-stage1", "olmo2-1b-ingr2", "dose_dolmino"),
-         ("pretraining → mid-training run 3", "olmo2-1b-stage1", "olmo2-1b-ingr3", "dose_dolmino"),
-         ("pretraining → released base (merged)", "olmo2-1b-stage1", "olmo2-1b", "dose_dolmino"),
-         ("base → SFT", "olmo2-1b", "olmo2-1b-sft", "dose_tulu3")]
+p = f"olmo2-{SIZE}"
+STEPS = [("pretraining → mid-training run 1", f"{p}-stage1", f"{p}-ingr1", "dose_dolmino"),
+         ("pretraining → mid-training run 2", f"{p}-stage1", f"{p}-ingr2", "dose_dolmino"),
+         ("pretraining → mid-training run 3", f"{p}-stage1", f"{p}-ingr3", "dose_dolmino"),
+         ("pretraining → released base (merged)", f"{p}-stage1", p, "dose_dolmino"),
+         ("base → SFT", p, f"{p}-sft", SFT_DOSE)]
 STEPS = [s for s in STEPS if {s[1], s[2]} <= set(L.model)]
 SCORERS = ("logp_sum", "logp_mean", "full_logp_sum")
 EXEMPLARS = ["crows-0-more", "crows-0-less", "crows-50-more", "crows-50-less",
@@ -47,11 +53,11 @@ def pair_frame(sc, before, after, dose):
 
 out("# OLMo 2 extension: the same model before and after it saw the leaked copies")
 out()
-out("Pre-specified in `preregistration_olmo2.md`. Model: OLMo-2-0425-1B. Exposure:")
-n_mid = int((V.dose_dolmino > 0).sum()); n_sft = int((V.dose_tulu3 > 0).sum())
+out(f"Pre-specified in `preregistration_olmo2.md`. Model: {MODEL}. Exposure:")
+n_mid = int((V.dose_dolmino > 0).sum()); n_sft = int((V[SFT_DOSE] > 0).sum())
 out(f"{n_mid:,} of {len(V):,} benchmark sentences occur in the Dolmino FLAN files "
     f"({int(V.dose_dolmino.sum()):,} copies) and {n_sft:,} in the Tulu 3 SFT mixture "
-    f"({int(V.dose_tulu3.sum()):,} copies).")
+    f"({int(V[SFT_DOSE].sum()):,} copies).")
 
 out("\n## P1. Sentence level: does more exposure mean a larger likelihood gain?\n")
 out("`gain ~ log1p(dose) + log1p(dose_pile) + length`, SEs clustered by item.\n")
@@ -116,8 +122,18 @@ out("\n## Deviations from preregistration_olmo2.md\n")
 out("- 20 texts are each shared by two benchmark sentences (duplicate CrowS pairs and StereoSet")
 out("  items). Both sentences get the text's count, as with infini-gram. This was decided while")
 out("  building `data/dose_olmo2.csv`, before this analysis was first run.")
-out("- The SFT checkpoint ships `pytorch_model.bin`, not safetensors, so it was scored after a")
-out("  second download. No analysis was changed after scoring.")
-out("- This deviations text is the only part of `olmo2.py` edited after the results were seen.")
+if SIZE == "1b":
+    out("- The SFT checkpoint ships `pytorch_model.bin`, not safetensors, so it was scored after a")
+    out("  second download. No analysis was changed after scoring.")
+    out("- After the 1B results were seen, `olmo2.py` was edited only in two ways: this deviations")
+    out("  text was added, and on 2026-10-21 a `--size` option was added for the 7B run. The 1B")
+    out("  numbers are unchanged, which was verified by regenerating this file.")
+else:
+    out("- Scored in fp16, not fp32, because fp32 does not fit on the one idle 24 GB GPU. The")
+    out("  before and after checkpoints use the same dtype.")
+    out("- The SFT step uses `dose_tulu3_1124`, the counts in `tulu-3-sft-olmo-2-mixture`, which")
+    out("  is the mixture this model's SFT used. The plan names the 0225 mixture, which the 1B used.")
+    out("- The predictions are the plan's, unchanged after the 1B results. This setup was")
+    out("  committed and pushed before any 7B checkpoint was scored.")
 open(OUTP, "w").write("\n".join(OUT) + "\n")
 print(f"\nwrote {OUTP}")

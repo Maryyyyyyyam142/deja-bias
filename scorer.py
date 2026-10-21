@@ -40,6 +40,19 @@ MODELS = {
                         "main", "float32"),
     "olmo2-1b-sft":    ("allenai/OLMo-2-0425-1B-SFT", "tulu-3-sft-olmo-2-mixture-0225", "sft",
                         "main", "float32"),
+    # OLMo 2 7B, same design (added 2026-10-21). fp16: fp32 does not fit on one idle 24 GB GPU.
+    "olmo2-7b-stage1": ("allenai/OLMo-2-1124-7B", "olmo-mix-1124", "before",
+                        "stage1-step928646-tokens3896B", "float16"),
+    "olmo2-7b-ingr1":  ("allenai/OLMo-2-1124-7B", "dolmino-mix-1124", "after",
+                        "stage2-ingredient1-step11931-tokens50B", "float16"),
+    "olmo2-7b-ingr2":  ("allenai/OLMo-2-1124-7B", "dolmino-mix-1124", "after",
+                        "stage2-ingredient2-step11931-tokens50B", "float16"),
+    "olmo2-7b-ingr3":  ("allenai/OLMo-2-1124-7B", "dolmino-mix-1124", "after",
+                        "stage2-ingredient3-step11931-tokens50B", "float16"),
+    "olmo2-7b":        ("allenai/OLMo-2-1124-7B", "dolmino-mix-1124", "after-merged",
+                        "main", "float16"),
+    "olmo2-7b-sft":    ("allenai/OLMo-2-1124-7B-SFT", "tulu-3-sft-olmo-2-mixture", "sft",
+                        "main", "float16"),
 }
 PHASE_A = ["olmo-7b-v1.5", "olmo-7b-v1.7", "pythia-6.9b"]
 

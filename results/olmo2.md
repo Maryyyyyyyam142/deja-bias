@@ -90,4 +90,6 @@ Instance fixed effects, role, length and Pile dose as controls; CR1 on instance.
   building `data/dose_olmo2.csv`, before this analysis was first run.
 - The SFT checkpoint ships `pytorch_model.bin`, not safetensors, so it was scored after a
   second download. No analysis was changed after scoring.
-- This deviations text is the only part of `olmo2.py` edited after the results were seen.
+- After the 1B results were seen, `olmo2.py` was edited only in two ways: this deviations
+  text was added, and on 2026-10-21 a `--size` option was added for the 7B run. The 1B
+  numbers are unchanged, which was verified by regenerating this file.
